@@ -1,0 +1,33 @@
+# Java_script
+ Q1:
+ A good string is a string that starts with the letter "a" & has a lenght > 3. write a program to find if a string is good or not. 
+
+ Q2:
+ Use swith statment to print the day of the week using a number varialbe 'day'  with value 1 to 7. 
+
+Q3:
+Create a number variable num with some value 
+Now print good if the number is divisble by 10 and print  bad if it is not. 
+
+Q4 : Take the user's name & age as input usign prompts then return back the following statements to the user an an elert
+(by substituting their name & age)
+name is age year old 
+notes: use template literals to print this sentence/ 
+
+
+Q5:
+write a swith startment to print the month in a quarter
+
+
+06:
+A stirng is a golden strin if it starts with the character A or a and has a total lenght greater than 5
+for a given string print if it is golden or not. 
+
+
+07:
+write a program to find the largest of 3 number;
+
+
+08:
+write a program to check if 02 number have the same last digit 
+EG: 32 and 4872 have the same last digit i.e 2
