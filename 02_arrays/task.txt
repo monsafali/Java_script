@@ -1,0 +1,9 @@
+for the given start state of an array change it to final form using methods
+
+start = ['january','july','march','august']
+find = ['jully','juni','march','august']
+
+
+Return the index of the "javascript" from the given array if it was reserved.
+
+['c','c++','html','javascript','python','java','c#','sql']
