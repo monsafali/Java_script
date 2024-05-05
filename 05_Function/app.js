@@ -46,14 +46,122 @@ console.log(Sum)
 
 // console.log(sumNumber(4));
 
-let array = ["IT","is","Amazing","course"]
+// let array = ["IT","is","Amazing","course"]
 
-function concatination(array){
-    let result;
-    for(let i=0; i< array.length;i++){
-      result += array[i]
-    }
-    return result;
+// function concatination(array){
+//     let result;
+//     for(let i=0; i< array.length;i++){
+//       result += array[i]
+//     }
+//     return result;
+// }
+
+// console.log(concatination(array));
+
+// Qs1. Write a JavaScript function that returns array elements larger than a number.
+
+let name = function(array, number){
+    let larger_number = [];
+    for(x in array){
+        if(array[x] > number){
+            larger_number.push(array[x]);
+        }
+
+    } return larger_number;
+
 }
 
-console.log(concatination(array));
+let data = [1,2,8,4,7,3,5,4,6,8,11];
+
+// console.log(name(data,5));
+
+
+// Qs2. Write a JavaScript function to extract unique characters from a string.
+// Example: str = “abcdabcdefgggh” ans = “abcdefgh”
+
+let unique = function(str){
+    let List = [];
+    for(let x in str){
+        List.push(str[x])
+    }
+   let uniqueset = new Set(List);
+   let uniquearr = Array.from(uniqueset);
+   let uniqueitem = uniquearr.join("");
+   let unique_string = uniqueitem.toString();
+   return unique_string
+}
+
+// let string = "abcdabcdefgggh";
+// console.log(unique(string))
+
+
+
+
+// Qs3. Write a JavaScript function that accepts a list of country names as input and 
+// returns the longest country name as output.
+// Example : country = ["Australia", "Germany", "United States of America"] output : 
+// "United States of America"
+
+function longestCountryName(country) {
+    let longest = "";
+    for (let i = 0; i < country.length; i++) {
+        if (country[i].length > longest.length) {
+            longest = country[i];
+        }
+    }
+    return longest;
+}
+
+// Example usage:
+// const countryNames = ["Australia", "Germany", "United States of America","Pakistan","Dubai","Indian"];
+// console.log(longestCountryName(countryNames)); // Output: "United States of America"
+
+
+
+function shortestCountryName(country) {
+    let shortest = country[0]; // Initialize shortest with the first country name
+    for (let i = 1; i < country.length; i++) { // Start the loop from the second country name
+        if (country[i].length < shortest.length) { // Compare lengths to find the shortest name
+            shortest = country[i];
+        }
+    }
+    return shortest;
+}
+
+// Example usage:
+const countryNames = ["Australia", "Germany", "United States of America","Pakistan","Dubai","Indian"];
+console.log(shortestCountryName(countryNames)); // Output: "Germany"
+
+
+
+
+// Qs4. Write a JavaScript function to count the number of vowels in a String
+// argument.
+
+let vowel_count = function(str){
+    let vowel = ["a","e","i","o","u"]
+    count = 0;
+    for(let i=0; i <str.length; i++){
+        for(x in vowel){
+            if(str[i] == vowel[x]){
+                count++
+            }
+        }   
+    }return count
+}
+
+// console.log(vowel_count('The quick brown fox jumpes over the lazy dog.'))
+
+
+
+
+// Qs5. Write a JavaScript function to generate a random number within a range
+// (start, end).
+
+
+let my_choise_random = function (strt_num,end_num){
+    let random = Math.floor(Math.random()* (end_num-strt_num +1)) + strt_num;
+    return random;
+}
+
+console.log(my_choise_random(10,20))
