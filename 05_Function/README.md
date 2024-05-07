@@ -38,3 +38,19 @@ Qs5. Write a JavaScript function to generate a random number within a range
 (start, end).
 
 
+Micellence Topic:.
+
+Write an arrow funciton that returns the squre of a number "n".
+
+create a arrow function with setineteval who print the stetement  in every 2s back to back
+
+Qs1: write an arrow function named arrayAverage that accepts and array of numbers and returns the average of those numbers. 
+
+
+Q2: write an arrow function named isEven() that takes a single number as a arguments and returns if it is even or not. 
+
+
+
+
+
+

@@ -164,4 +164,67 @@ let my_choise_random = function (strt_num,end_num){
     return random;
 }
 
-console.log(my_choise_random(10,20))
+// console.log(my_choise_random(10,20))
+
+// Write an arrow funciton that returns the squre of a number "n".
+
+let squre = (n)=>{
+    return n*n
+}
+
+// create a arrow function with setineteval who print the stetement  in every 2s back to back
+// let Name = setInterval(()=>{
+//     console.log('Hello Word');
+// },2000)
+
+
+
+// Qs1: write an arrow function named arrayAverage that accepts and array of numbers and returns the average of those numbers. 
+
+let arrayAverage = (array)=>{
+    let total = 0;
+    for(let i=0; i<array.length; i++){
+        total += array[i];
+    }
+    return total/array.length;
+}
+
+let marks = [50,80,33];
+
+
+
+
+// Q2: write an arrow function named isEven() that takes a single number as a arguments and returns if it is even or not. 
+
+let IsEven = (n)=>{
+    if(n%2== 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+
+
+// const object = {
+//     Message: "Hellow how are you",
+//     logMessage(){
+//         console.log(this.Message)
+//     }
+// };
+
+// setTimeout(object.logMessage,1000)
+
+
+let lenght = 4;
+function callback(){
+    console.log(this.lenght);
+}
+const Object = {
+    lenght: 5,
+    method(callback){
+        callback();
+    },
+};
+
+Object.method(callback, 1,2);
