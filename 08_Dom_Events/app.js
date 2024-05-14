@@ -1,35 +1,24 @@
-let btns = document.querySelectorAll('button');
-for(btn of btns){
-    // btn.onclick = (()=>{
-    //     alert('submit successfully')
-    // })
-
-// onmouseenter
-    // btn.onmouseenter = (()=>{
-    //     alert('someone hacked you accounts')
-    // })
 
 
+let btn = document.querySelector('button');
+btn.addEventListener('click',function(){
+    let h3 = document.querySelector("h3");
+    let randomColor = getRandomColor();
+    h3.innerText = randomColor;
 
-    // addEventListener
-    btn.addEventListener("click",sayRight);
-    btn.addEventListener("click",sayWrong);
-    btn.addEventListener("dblclick",(()=>{
-        console.log('you clicked doubled')
-    }));
+
+    let div = document.querySelector("div");
+    div.style.backgroundColor = randomColor;
+
+
+    console.log('Color Updated')
+})
+
+function  getRandomColor(){
+    let red = Math.floor(Math.random()*255);
+    let green = Math.floor(Math.random()*255);
+    let blue = Math.floor(Math.random()*255);
+ 
+    let color = `rgb(${red},${green},${blue})`
+    return color;
 }
-
-function sayRight (){
-    alert('All things going right')
-}
-
-function sayWrong(){
-    alert("Something went wrong")
-}
-
-
-
-
-
-
-
