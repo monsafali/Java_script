@@ -1,4 +1,4 @@
-body{
+/* body{
     text-align: center;
 }
 button {
@@ -9,4 +9,19 @@ button {
     height: 100px;
     width: 500px;
     border: 1px solid black;
+}
+ */
+
+
+/* events */
+
+#scrollInfo {
+    position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: none;
 }
