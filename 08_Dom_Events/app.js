@@ -70,19 +70,19 @@
 // that changes the button’s color to green when it is clicked.
 
 
-const button = document.createElement('button');
-button.textContent = 'Click me!';
-button.id = 'myButton';
+// const button = document.createElement('button');
+// button.textContent = 'Click me!';
+// button.id = 'myButton';
 
 // Add event listener to the button
-button.addEventListener('click', () => {
-  // Change the button's background color to green
-  button.style.backgroundColor = 'green';
-});
+// button.addEventListener('click', () => {
+//   // Change the button's background color to green
+//   button.style.backgroundColor = 'green';
+// });
 
 // Append the button to the container in the HTML body
-const buttonContainer = document.getElementById('buttonContainer');
-buttonContainer.appendChild(button);
+// const buttonContainer = document.getElementById('buttonContainer');
+// buttonContainer.appendChild(button);
 
 
 
@@ -97,8 +97,11 @@ buttonContainer.appendChild(button);
 // visible in the heading]
 
 
+const nameInput = document.getElementById('nameInput');
+const nameHeading = document.getElementById('nameHeading');
 
-
-
-
-
+nameInput.addEventListener('input', function() {
+    const filteredInput = nameInput.value.replace(/[^a-zA-Z ]/g, '');
+    nameInput.value = filteredInput;
+    nameHeading.textContent = filteredInput;
+});
