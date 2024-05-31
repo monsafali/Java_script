@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Wrapper -->
+
+    <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-10">
+        <div class="text-[#0398d4] font-medium text-[20px]">Increment And Decrement</div>
+
+        <div class="bg-white flex text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5">
+            <!-- negative buttons -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+                
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <div id="counter" class="font-bold">
+                0
+            </div>
+            <!-- postive buttons -->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div>
+    
+
+    <!-- Link Font Awesome  -->
+    <script src="https://kit.fontawesome.com/5b12999530.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
